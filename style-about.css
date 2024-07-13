@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fcf6f0;
+    font-family: "Poppins", sans-serif;
+}
+.container-1 {
+    width: 100vw;
+    background-color: #fcf6f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 70%;
+    background-color: #76453b;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
+}
+.navigation {
+    text-decoration: none;
+    color: #fcf6f0;
+    font-size: 130%;
+    font-weight: bold;
+}
+.logo-nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: top 0.3s;
+}
+.logo-nav-container-mobile {
+    display: none;
+}
+.nav-links {
+    display: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.nav-links :hover {
+    color: #fcdd7d;
+}
+.nav-container a {
+    transition: .3s ease;
+    cursor: pointer;
+}
+.nav-container a:hover {
+    color: #fcdd7d;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 79vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.main h1 {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    align-self: flex-end;
+    margin-right: 19%;
+}
+.content-about {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.content-about img {
+    width: 35vw;
+    justify-self: center;
+    height: auto;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2.1vw;
+    text-wrap: nowrap;
+    color: #76453b;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        background-color: #76453b;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fcf6f0;
+        font-size: 130%;
+        font-weight: bold;
+        padding: 15px;
+        text-align: center;
+        display: block;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    .nav-links a:hover {
+        color: #fcdd7d;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo-nav-container {
+        display: none;
+    }
+
+    .logo-nav-container-mobile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .nav-container-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 60%;
+    }
+
+    .menu-icon {
+        font-size: 7vw;
+        cursor: pointer;
+    }
+
+    .logo-mobile {
+        width: 22%;
+    }
+
+    .content-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-about img {
+        width: 80%;
+    }
+
+    .main {
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .text {
+        font-size: 4vw;
+        gap: 20px;
+    }
+
+    .main h1 {
+        font-size: 10vw;
+        margin: 0;
+        align-self: center;
+    }
+}
+.Team_mem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 10%;
+}
+.Team_mem h1 {
+    font-size: 7vw;
+    font-family: "Schoolbell", cursive;
+}
+.tm_align {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 200px;
+}
+.member h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#vj,
+#mee,
+#la {
+    width: 15vw;
+    height: auto;
+}
+
+#mee {
+    width: 22vw;
+}
+
+@media (max-width: 768px) {
+    .Team_mem h1 {
+        font-size: 10vw;
+    }
+
+    .tm_align {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .member h1 {
+        font-size: 5vw;
+    }
+
+    #vj,
+    #mee,
+    #la {
+        width: 50vw;
+    }
+}
+.face img {
+    height: auto;
+    width: 20vw;
+}
+.faces {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+.faces h1 {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    align-self: center;
+}
+.faces_img {
+    display: flex;
+    gap: 10%;
+}
+.fi_upper {
+    display: flex;
+    margin-left: 2vw;
+    gap: 10%;
+}
+.fi_lower {
+    display: flex;
+    gap: 10%;
+}
+.face {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.face h2 {
+    align-self: center;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .faces_img {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .faces {
+        margin-left: 5%;
+    }
+
+    .fi_upper {
+        display: flex;
+        margin-left: 0;
+        gap: 10%;
+    }
+    .face h2{
+        font-size: 4vw;
+        font-style: italic;
+    }
+    .face img {
+        height: auto;
+        width: 40vw;
+    }
+}
+.amazing_member h1 {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-size: 6vw;
+    align-self: center;
+}
+.amazing_member {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+.profile_align img {
+    height: auto;
+    width: 17vw;
+}
+.profile_align {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+}
+.profile_align h1 {
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+    align-self: center;
+    font-weight: bold;
+    font-style: italic;
+}
+.am_upper {
+    display: flex;
+    justify-content: space-around;
+}
+.am_lower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.am_center {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .am_upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .am_lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .am_center {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .profile_align img {
+        height: auto;
+        width: 32vw;
+    }
+
+    .profile_align h1 {
+        font-size: 3vw;
+        font-family: "Poppins", sans-serif;
+        align-self: center;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #683C32;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    min-width: 250px;
+}
+
+.footer-left h1 {
+    margin: 0;
+    font-family: 'Schoolbell', cursive;
+    font-size: 2.5rem;
+}
+
+
+.footer-left .socials {
+    margin-top: 10px;
+}
+
+.footer-left .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 2.5rem;
+}
+
+.footer-middle {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-middle h2 {
+    margin: 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-middle ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin: 5px 0;
+}
+
+.footer-middle ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-right h2 {
+    margin: 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-right p, .footer-right a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #B78E7F;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+#hover:hover{
+    color: #FFDE5C;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        text-align: center;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-left .socials {
+        justify-content: center;
+    }
+}
+button:hover{
+    color: #fcdd7d !important;
+    transform: scale(1.03) !important;
+}
