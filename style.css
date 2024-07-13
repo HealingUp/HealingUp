@@ -189,7 +189,7 @@ body {
 .red_text_toheal {
   position: relative;
   top: 9vh;
-  left: 150%;
+  left: 139%;
   transform: translateX(-50%);
   z-index: 3;
   width: 150%;
