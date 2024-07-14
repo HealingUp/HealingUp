@@ -116,42 +116,7 @@ body {
   box-shadow: 2px 2px black;
 }
 
-@media screen and (max-width: 1000px) {
-  .welcome {
-    display: none;
-  }
 
-  .welcome2 {
-    display: block;
-    font-family: "Inter", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    color: white;
-    font-size: 16vw;
-    text-shadow: 3px 3px 7px black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-  }
-
-  .container {
-    display: none;
-  }
-
-  #startAnimation {
-    width: 15%;
-    height: 7%;
-    position: absolute;
-    bottom: 10%;
-    left: 42%;
-    z-index: 2;
-    border-radius: 15px;
-    box-shadow: 2px 2px black;
-    overflow: hidden;
-  }
-}
 .animationimg {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -177,6 +142,9 @@ body {
   font-size: 16vw;
   text-shadow: 3px 3px 7px black;
 }
+#startAnimation1{
+display: none;
+}
 .display {
   display: flex;
   justify-content: space-between;
@@ -186,6 +154,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+
 .red_text_toheal {
   position: relative;
   top: 9vh;
@@ -194,4 +163,56 @@ body {
   z-index: 3;
   width: 150%;
   height: auto;
+}
+@media screen and (max-width: 1200px) {
+  .welcome {
+    display: none;
+  }
+  #startAnimation{
+    display :none;
+  }
+
+  .welcome2 {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    color: white;
+    font-size: 16vw;
+    text-shadow: 3px 3px 7px black;
+    z-index: 4;
+    margin-top: 15vh;
+  }
+
+  .container {
+    display: none;
+  }
+  .display{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100vw;
+    gap: 10%;
+    justify-content: space-evenly;
+  }
+  #startAnimation1{
+    display: block;
+    width: 22vw;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    overflow: hidden;
+    height: 5vh;
+
+  }
+  #startAnimation {
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    overflow: hidden;
+  }
 }
