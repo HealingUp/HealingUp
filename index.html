@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainbow Animation</title>
+    <title>Welcome</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -28,12 +28,19 @@
           <img class="red_text_toheal" src="img/red healing up text.png">
         </div>
         <h1 class="welcome" id="">ME</h1>
+        <button id="startAnimation1">GET STARTED</button>
       </div>
       <button id="startAnimation">GET STARTED</button>
     </div>
     <div class="container-1" id="container1"></div>
     <script>
       document.getElementById("startAnimation").addEventListener("click", function () {
+        document.querySelector(".container-main").classList.add("slide-up");
+        setTimeout(function () {
+          window.location.href = "main.html"; // Change to your desired URL
+        }, 1000); // Match this with the transition duration
+      });
+      document.getElementById("startAnimation1").addEventListener("click", function () {
         document.querySelector(".container-main").classList.add("slide-up");
         setTimeout(function () {
           window.location.href = "main.html"; // Change to your desired URL
