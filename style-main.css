@@ -947,8 +947,10 @@ body {
 }
 
 .submit-button {
+    font-family: 'Poppins', sans-serif;
     padding: 15px 30px;
     font-size: 1em;
+    font-weight: 500;
     border: none;
     border-radius: 30px;
     background-color: #683C32;
@@ -967,7 +969,8 @@ body {
 footer {
     background-color: #683C32;
     color: white;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .footer-container {
@@ -987,6 +990,7 @@ footer {
 }
 
 .footer-left h1 {
+    color: #ffde59;
     margin: 0;
     font-family: 'Schoolbell', cursive;
     font-size: 2.5rem;
@@ -1010,6 +1014,7 @@ footer {
 }
 
 .footer-middle h2 {
+    color: #fcdd7d;
     margin: 0 0 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
@@ -1020,35 +1025,39 @@ footer {
     margin: 0;
     padding: 0;
 }
-
 .footer-middle ul li {
     margin: 5px 0;
 }
-
 .footer-middle ul li a {
-    color: white;
+    color: #fcf6f0;
     text-decoration: none;
     font-size: 1.2rem;
 }
-
 .footer-right {
     flex: 1;
     min-width: 200px;
     text-align: left;
 }
-
 .footer-right h2 {
+    color: #fcdd7d;
     margin: 0 0 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
 }
-
-.footer-right p, .footer-right a {
+.footer-right p{
+    color: #fcf6f0;
     font-size: 1.2rem;
-    color: white;
     text-decoration: none;
 }
-
+.footer-right a {
+    color: #92c5c9;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.footer-right a:hover {
+    color: #fcdd7d;
+}
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
@@ -1056,17 +1065,19 @@ footer {
     padding-top: 10px;
     font-size: 1.2rem;
 }
-
 .footer-bottom p {
     margin: 0;
+    color: #fcf6f0;
 }
-
 .footer-bottom a {
     color: white;
     text-decoration: none;
 }
+#hover{
+    transition: .3s ease;
+}
 #hover:hover{
-    color: #FFDE5C;
+    color: #92c5c9;
 }
 
 @media (max-width: 768px) {
